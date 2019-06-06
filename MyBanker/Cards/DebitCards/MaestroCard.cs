@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace MyBanker.Cards
 {
-	class MaestroCard
+	class MaestroCard : DebitCard
 	{
+		public DateTime ExpireDate { get; private set; }
+
+		public MaestroCard(int age, string firstName, string lastName, string cardNumber, string accountNumber, DateTime expireDate)
+			: base(age, firstName, lastName, cardNumber, accountNumber)
+		{
+			ExpireDate = expireDate;
+		}
 	}
 }

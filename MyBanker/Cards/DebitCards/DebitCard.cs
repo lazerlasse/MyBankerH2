@@ -9,6 +9,12 @@ namespace MyBanker.Cards
 {
 	class DebitCard : Card, ICardAge
 	{
-		public int Age { get; set; }
+		public int Age { get; private set; }
+
+		public DebitCard(int age, string firstName, string lastName, string cardNumber, string accountNumber)
+			: base(firstName, lastName, cardNumber, accountNumber)
+		{
+			Age = age;
+		}
 	}
 }
