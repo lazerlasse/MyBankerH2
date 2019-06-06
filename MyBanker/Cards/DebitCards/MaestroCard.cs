@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyBanker
+namespace MyBanker.Cards
 {
-	class Program
+	class MaestroCard
 	{
-		static void Main(string[] args)
-		{
-
-		}
 	}
 }

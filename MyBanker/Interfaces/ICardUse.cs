@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyBanker
+namespace MyBanker.Interfaces
 {
-	class Program
+	interface ICardUse
 	{
-		static void Main(string[] args)
-		{
-
-		}
 	}
 }
